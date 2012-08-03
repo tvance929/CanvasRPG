@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas RPG - TVance</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link type="text/css" href="style/ui-lightness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+    <script type="text/javascript" src="js/gameData.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <style type="text/css">
+        #dragMe
+        {
+            border: 1px solid black;
+            background-color: tan;
+            width: 50px;
+        }
+        #left
+        {
+            float: left;
+            width: 10%;
+        }
+        
+        #right
+        {
+            float: right;
+            width: 60%;
+            border-left: 1px solid black;
+            background-color: beige;
+            height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="width: 80%; margin: 0 auto;" id="wrapper">
+        <div style="width: 100%; text-align: center;">
+            <img src="images/logo.png" /></div>
+        <div id="leftDiv" style="width: 20%; height: 506px; border: 3px solid black; float: left;
+            text-align: center">
+            <div id="optionsAccordion" style="width: 100%;">
+                <h3>
+                    Create Player</h3>
+                <div id="playerCreationDiv">
+                    Name:
+                    <input type="text" id="txtPlayerName" />
+                    <input type="button" id="btnCreatePlayer" value="Create Character" />
+                </div>
+                <h3>
+                    Save / Delete
+                </h3>
+                <div>
+                    <input type="button" id="btnSaveGame" value="Save Game" />
+                    <input type="button" id="btnDeleteGame" value="Delete Game" />
+                </div>
+                <h3>
+                    Inventory
+                </h3>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div id="centerDiv" style="width: 58%; border: 3px solid black; float: left">
+            <canvas width="500" height="500"></canvas>
+        </div>
+        <div id="rightDiv" style="width: 20%; border: 3px solid black; float: left; height: 506px;
+            text-align: center;">
+            <div id="infoInfo" style="width: 100%">
+            </div>
+            <div id="infoAccordion" style="width: 100%;">
+                <h3>
+                    <a href="#">Physical</a></h3>
+                <div style="text-align: left;">
+                    Name:
+                    <label id="infoName" class="characterLabels">
+                    </label>
+                    <br />
+                    Lvl:
+                    <label id="infoLevel" class="characterLabels">
+                    </label>
+                    <br />
+                    LP:
+                    <label id="infoLifePoints" class="characterLabels">
+                    </label>
+                    <br />
+                    XP:
+                    <label id="infoXP" class="characterLabels">
+                    </label>
+                    <br />
+                    Str:
+                    <label id="infoStr" class="characterLabels">
+                    </label>
+                    <br />
+                    Dex:
+                    <label id="infoDex" class="characterLabels">
+                    </label>
+                    <br />
+                    Piety:
+                    <label id="infoPty" class="characterLabels">
+                    </label>
+                </div>
+                <h3>
+                    <a href="#">Weapons</a></h3>
+                <div style="text-align: left;">
+                    Sword:
+                    <label id="infoSword" class="characterLabels">
+                    </label>
+                    <br />
+                    Dagger:
+                    <label id="infoDagger" class="characterLabels">
+                    </label>
+                    <br />
+                    Staff:
+                    <label id="infoStaff" class="characterLabels">
+                    </label>
+                    <br />
+                    Bow:
+                    <label id="infoBow" class="characterLabels">
+                    </label>
+                    <br />
+                    Dual:
+                    <label id="infoDual" class="characterLabels">
+                    </label>
+                </div>
+                <h3>
+                    <a href="#">Armor</a></h3>
+                <div style="text-align: left;">
+                    this.shield = 0; this.leather = 0; this.ring = 0; this.plate = 0;
+                </div>
+                <h3>
+                    <a href="#">Prayers</a></h3>
+                <div style="text-align: left;">
+                    this.shield = 0; this.leather = 0; this.ring = 0; this.plate = 0;
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

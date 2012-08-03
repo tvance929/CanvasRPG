@@ -1,0 +1,24 @@
+﻿body
+{
+	background-image:url('../images/bg.jpg');
+}
+#leftDiv
+{
+	border-radius: 10px;
+	box-shadow: -6px 7px 27px rgba(0, 0, 0, 0.80);
+	background: #beb385;
+}
+
+#rightDiv
+{
+	border-radius: 10px;
+	box-shadow: 6px 7px 27px rgba(0, 0, 0, 0.80);
+	background: #beb385;
+}
+
+#centerDiv
+{
+	box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.80);
+	background: #beb385;
+	border-radius: 10px;
+}
